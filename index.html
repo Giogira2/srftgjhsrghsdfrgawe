@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фишинг сайт</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000000;
+        }
+        .container {
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: 600px;
+        }
+        .description {
+            font-family: Arial, sans-serif;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img id="gifImage" src="doc_2024-06-18_18-54-15.gif" alt="GIF of Code">
+        <div class="description">
+        </div>
+    </div>
+    <script>
+        // Длительность GIF в миллисекундах
+        const gifDuration = 11900; // Замените это на реальную продолжительность вашего GIF
+
+        setTimeout(() => {
+            document.getElementById('gifImage').style.display = 'none';
+        }, gifDuration);
+    </script>
+</body>
+</html>
